@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <style>
+    .events-list {
+      display: flex;
+      overflow-x: scroll;
+      white-space: nowrap;
+    }
+    .event-card {
+      width: 200px;
+      height: 300px;
+      margin-right: 16px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 4px #ccc;
+    }
+    .event-name {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      padding: 16px;
+    }
+    .event-details {
+      padding: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Events</h1>
+  <div class="events-list">
+    <div class="event-card">
+      <div class="event-name">Event 1</div>
+      <div class="event-details">
+        <p>Organizer: John Doe</p>
+        <p>Date: 01/01/2023</p>
+        <p>Time: 10:00 AM</p>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="event-name">Event 2</div>
+      <div class="event-details">
+        <p>Organizer: Jane Doe</p>
+        <p>Date: 02/01/2023</p>
+        <p>Time: 11:00 AM</p>
+      </div>
+    </div>
+    <!-- Add more event cards here -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/xlsx@0.16.8/dist/xlsx.full.min.js"></script>
+    <script src = "participant.js"></script>
+    <style>
+      .container {
+        width: 500px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      table {
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+
+      th, td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+
+      /* Add styling for the table header cells */
+      th {
+        background-color: #dddddd;
+      }
+
+      /* Add styling for the table body cells */
+      td {
+        background-color: #ffffff;
+      }
+
+      /* Add styling for the table caption */
+      caption {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Participants Details</h2>
+      <table id="table">
+       
+        
+      </table>
+      <button class = "button" onclick="window.exportExcel()">get excel</button>
+    </div>
+  </body>
+</html>

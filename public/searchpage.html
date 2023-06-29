@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url(image.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px grey;
+      }
+
+      input[type="text"] {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Go">
+      </form>
+    </div>
+  </body>
+</html>
