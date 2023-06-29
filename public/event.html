@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+    <title>Create Event</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      }
+      input, select {
+        padding: 10px;
+        margin: 10px 0;
+        width: 300px;
+      }
+      input[type="file"] {
+        width: auto;
+      }
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="event-form" >
+      <input type="text" placeholder="Event Title" name="eventTitle">
+      <input type="text" placeholder="Location" name="location">
+      <input type="date" name="date">
+      <input type="time" name="time">
+      <input type="file" name="image">
+      <input type="button" value="Submit"  onclick="window.submit()">
+      <a href = 'orghome.html'><input type="button" value="show events" ></a>
+    </form>
+    <script src="eventpage.js"></script>
+  </body>
+</html>

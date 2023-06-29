@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Event Form</title>
+    <style>
+      .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      input[type="text"],
+      textarea {
+        width: 400px;
+        height: 40px;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      input[type="file"] {
+        width: 400px;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 1px solid gray;
+      }
+
+      #preview {
+        width: 400px;
+        height: 200px;
+        margin: 20px 0;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name">
+
+        <label for="event-desc">Event Description:</label>
+        <textarea id="event-desc" name="event-desc"></textarea>
+
+        <label for="event-date">Event Date:</label>
+        <input type="text" id="event-date" name="event-date">
+
+        <label for="event-time">Event Time:</label>
+        <input type="text" id="event-time" name="event-time">
+
+        <label for="cover-image">Cover Image:</label>
+        <input type="file" id="cover-image" name="cover-image">
+        <img id="preview" src="" alt="Image Preview">
+      </form>
+    </div>
+
+    <script>
+      document.querySelector("#cover-image").addEventListener("change", function() {
+        const preview = document.querySelector("#preview");
+        const file = this.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+
+          reader.addEventListener("load", function() {
+            preview.src = reader.result;
+          });
+
+          reader.readAsDataURL(file);
+        } else {
+          preview.src = "";
+        }
+      });
+    </script>
+  </body>
+</html>

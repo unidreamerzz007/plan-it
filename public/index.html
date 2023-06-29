@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="landing.css">
+    <style>
+        .button {
+          display: block;
+          border-radius: 4px;
+          background-color: #282828;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 15px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        .astronaut {
+    margin-right: 100px;
+    max-width: 350px;
+    float: right;
+    z-index: -1;
+}
+
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+
+        body {
+    /* background-image: url(Mask\ group.png);
+    background-size: he; */
+    background-color: purple;
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: 62.5%;
+}
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+</head>
+<body>
+     
+    <header id="header">
+        <nav id="nav-bar">
+            <input type="checkbox" name="" id="check">
+            <label for="check" class="checkbtn"><i class="bi bi-list"></i></label>
+            <img src="https://assets.codepen.io/9212641/glowing-star.svg" alt="StarLights logo" id="header-img">
+            <label class="brand">planIT</label>
+            <ul>
+              <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#Create" class="nav-link">Create</a></li>
+                <li><a href="#preview" class="nav-link">Find</a></li>
+                <li><a href="#testimonials" class="nav-link">Track</a></li>
+                <li><a href="login.html" class="nav-link" style=" color: white;; border-radius: 15px; border-style: solid; border-color: rgb(31, 31, 31);background-color: rgb(31, 31, 31);">User's Login</a></li>
+                <li><a href="orglogin.html" class="nav-link" style="color: white;; border-radius: 15px; border-style: solid; border-color: rgb(31, 31, 31);background-color: rgb(31, 31, 31);">Organizer's Login</a></li>
+            </ul>
+        
+        </nav>
+    </header>
+    
+    <main id="main">
+        <section id="about">
+            <div class="text">
+                <h1 class="brand-heading">Find Plans in One Place!</h1>
+                <!-- <h2>A fun way to learn about the universe</h2> -->
+                <p class="description">We help in finding and joining in<br> small and
+                  large scale technical and <br>not techinical events conducted by<br> various
+                  clubs and societies.
+                </p>
+                <a href="index1.html">
+                                       <button class="button" style="margin-top: 70px; vertical-align:middle"><span>Continue </span></button></a>
+                
+            </div>
+            <div class="image">
+                <img src="Group 7.png" alt="Go on a journey with our astronaut" class="astronaut">
+            </div>
+           
+        </section>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="indexpage.js"></script>
+   <!-- <script>
+    
+    
+   </script> -->
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"],
+      input[type="tel"] {
+        width: 50%;
+        height: 35px;
+        margin: 10px 0;
+        padding-left: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        width: 20%;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+      #email:invalid{
+        border: 2px solid red;
+        animation:shake 0.2s 2;
+      }
+      @keyframes shake {
+        25% {
+          translate: 6px 0;
+        }
+        50% {
+          translate: -6px 0;
+
+        }
+        100% {
+          translate: 6px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" onsubmit= "return window.submit()">
+      <h2>Sign Up</h2>
+      <input id="name" type="text" placeholder="Name"  required>
+      <input id="email" type="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+      <input id="password" type="password" placeholder="Password"  required>
+      <input id="phoneno" type="tel" placeholder="Phone Number" required >
+      <input type="submit" value="Submit">
+      <br>
+      <a href="users.html">
+      <input type="Button" value="users" "></a>
+      <a href="event.html">
+        <input type="Button" value="events" "></a>
+    </form>
+  </body>
+</html>
